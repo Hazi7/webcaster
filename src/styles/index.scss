@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+    display: flex;
+}
+
+.aside {
+    width: 15%;
+    min-width: 264px;
+    height: 100vh;
+    background-color: rgb(246,246,246);
+
+    &__header {
+        width: 100%;
+        height: 64px;
+        // background-color: blue;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.tab-bar {
+    width: 100%;
+    min-height: 48px;
+    height: 5%;
+    background-color: rgb(56,56,56);
+}
+
+.streaming {
+    width: 65%;
+    margin: auto;
+    position: relative;
+    border-radius: 8px;
+    
+    &__content {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        top: 0;
+        left: 0;
+        background-color: rgb(31,32,35);
+        border-radius: 8px 8px 0 0;
+    }
+
+    video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__control {
+        width: 100%;
+        min-height: 64px;
+        height: 10%;
+        background-color: rgb(48,50,54);
+        z-index: 99;
+        border-radius: 0 0 8px 8px;
+    }
+}
