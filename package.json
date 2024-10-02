@@ -1,0 +1,25 @@
+{
+  "name": "webcaster-client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ark-ui/vue": "^4.1.0",
+    "alova": "^3.0.17",
+    "pinia": "^2.2.4",
+    "vue": "^3.5.10",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.3",
+    "unplugin-vue-components": "^0.27.4",
+    "vite": "^5.4.1",
+    "vue-tsc": "^2.0.29"
+  }
+}
