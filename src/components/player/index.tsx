@@ -5,7 +5,7 @@ import { useRef, useState } from "react";
 export default function Player() {
   const [isStreaming, setIsStreaming] = useState(false);
   const [err, setErr] = useState<unknown | Error>(new Error(""));
-  const [isConnected, setIsConnected] = useState();
+
   const videoRef = useRef<HTMLVideoElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
