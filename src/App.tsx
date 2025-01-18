@@ -1,11 +1,12 @@
-import { BrowserRouter } from "react-router";
-import { Icon } from "@iconify/react";
 import "./assets/styles/index.css";
+import Player from "./components/player";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Icon icon="tabler:adjustments-check"></Icon>
-    </BrowserRouter>
+    <>
+      <div className="h-screen">
+        <Player></Player>
+      </div>
+    </>
   );
 }

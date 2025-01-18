@@ -1,10 +1,10 @@
 /// <reference types="vitest/config" />
 
-import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import tailwindcss from "tailwindcss";
 import autoprefixer from "autoprefixer";
 import { resolve } from "node:path";
+import tailwindcss from "tailwindcss";
+import { defineConfig } from "vite";
 export default defineConfig({
   css: {
     postcss: {
@@ -17,5 +17,4 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  test: {},
 });
